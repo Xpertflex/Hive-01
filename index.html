@@ -112,8 +112,8 @@ img{
     </p>
 
     <!-- ✅ BUTTON WITH 5s DELAY -->
-    <button id="joinBtn" class="button">
-        Please wait 3s
+    <button class="button">
+        <a href="https://telegram.me/+N9vJmuqa6I5hODA1">Join Telegram Now</a>
     </button>
 
     <img src="images.jpg" alt="Telegram Community">
@@ -124,29 +124,10 @@ img{
     </p>
 </div>
 
-<script>
-const btn = document.getElementById("joinBtn");
-let time = 3;
 
-const countdown = setInterval(() => {
-    time--;
-    btn.innerText = "Please wait" + time + "s";
-
-    if (time <= 0) {
-        clearInterval(countdown);
-        btn.classList.add("active");
-        btn.innerText = "Join Telegram Now";
-    }
-}, 1000);
-
-btn.addEventListener("click", () => {
-    if (btn.classList.contains("active")) {
-        window.location.href = "https://telegram.me/+N9vJmuqa6I5hODA1";
-    }
-});
-</script>
 
 </body>
 </html>
+
 
 
